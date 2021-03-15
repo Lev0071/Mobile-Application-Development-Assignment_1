@@ -26,6 +26,12 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
                     .padding()
+                Text("A delicous yet simple mix of Proteins, Vegetables and Carbs")
+                    .font(.caption)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(.secondarySystemGroupedBackground))
+                    .font(.system(size: 15))
+                    .border((Color(.secondarySystemGroupedBackground))).padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
         }
     }
