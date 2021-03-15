@@ -34,8 +34,15 @@ struct ContentView: View {
                     .padding(10)
                     .overlay(
                         Capsule(style: .continuous)
-                            .stroke(Color.white,style: StrokeStyle(lineWidth: 5, dashPhase: 10))
+                            .stroke(Color.white,style: StrokeStyle(lineWidth: 1, dashPhase: 10))
                     )
+                Divider()
+                    .background(Color.white)
+                    .padding(.top, 20)
+                Text("qwerty")
+                    .font(.body)
+                    .fontWeight(.medium)
+                    .foregroundColor(Color(.secondarySystemGroupedBackground))
             }
         }
     }
