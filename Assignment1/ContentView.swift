@@ -11,7 +11,15 @@ let imageWith = CGFloat(300.0)
 let imageHeight = CGFloat(300.0)
 let imageName = "KebabAndPizza"
 let shortDescription = "A delicous yet simple mix of Proteins, Vegetables and Carbs"
-let story = ""
+let story = """
+
+I love Kebab and Pizzas, not only because I am Mediterranean myself!
+I love it because of its great taste despite its simplicity!
+
+For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
+
+Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
+"""
 
 let title = "Kebabs And Pizzas"
 
@@ -44,10 +52,15 @@ struct ContentView: View {
                 Divider()
                     .background(Color.white)
                     .padding(.top, 20)
-                Text("qwerty")
+                Text(story)
                     .font(.body)
                     .fontWeight(.medium)
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
+                    .padding(.horizontal)
+                    .overlay(
+                        Capsule(style: .continuous)
+                            .stroke(Color.white,style: StrokeStyle(lineWidth: 1, dashPhase: 10))
+                    )
             }
         }
     }
