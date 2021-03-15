@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            Color(#colorLiteral(red: 0.3490196078, green: 0.3490196078, blue: 0.3490196078, alpha: 1))
+            Color(#colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1))
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             Text("Pizzas & Kebabs")
                 .font(.title)
                 .fontWeight(.bold)
-                .foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                .foregroundColor(Color(.secondarySystemGroupedBackground))
                 .padding()
         }
     }
