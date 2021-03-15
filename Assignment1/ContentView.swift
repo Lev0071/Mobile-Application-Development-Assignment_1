@@ -31,7 +31,8 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
                     .font(.system(size: 15))
-                    .border((Color(.secondarySystemGroupedBackground))).padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .border((Color(.secondarySystemGroupedBackground)))
             }
         }
     }
