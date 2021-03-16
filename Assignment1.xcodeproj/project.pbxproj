@@ -13,6 +13,8 @@
 		84CA95F225FF5C29009CFFA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA95F125FF5C29009CFFA5 /* Preview Assets.xcassets */; };
 		84CA95FD25FF5C29009CFFA5 /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95FC25FF5C29009CFFA5 /* Assignment1Tests.swift */; };
 		84CA960825FF5C29009CFFA5 /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA960725FF5C29009CFFA5 /* Assignment1UITests.swift */; };
+		84FC67AA2600540D000A676C /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC679E26004EA3000A676C /* Info.swift */; };
+		84FC67B526005434000A676C /* InfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC67B426005434000A676C /* InfoTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		84CA960325FF5C29009CFFA5 /* Assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA960725FF5C29009CFFA5 /* Assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITests.swift; sourceTree = "<group>"; };
 		84CA960925FF5C29009CFFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FC679E26004EA3000A676C /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		84FC67B426005434000A676C /* InfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */,
 				84CA95EC25FF5C26009CFFA5 /* ContentView.swift */,
+				84FC679E26004EA3000A676C /* Info.swift */,
 				84CA95EE25FF5C29009CFFA5 /* Assets.xcassets */,
 				84CA95F325FF5C29009CFFA5 /* Info.plist */,
 				84CA95F025FF5C29009CFFA5 /* Preview Content */,
@@ -126,6 +131,7 @@
 			children = (
 				84CA960725FF5C29009CFFA5 /* Assignment1UITests.swift */,
 				84CA960925FF5C29009CFFA5 /* Info.plist */,
+				84FC67B426005434000A676C /* InfoTest.swift */,
 			);
 			path = Assignment1UITests;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CA95ED25FF5C26009CFFA5 /* ContentView.swift in Sources */,
+				84FC67AA2600540D000A676C /* Info.swift in Sources */,
 				84CA95EB25FF5C26009CFFA5 /* Assignment1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CA960825FF5C29009CFFA5 /* Assignment1UITests.swift in Sources */,
+				84FC67B526005434000A676C /* InfoTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
