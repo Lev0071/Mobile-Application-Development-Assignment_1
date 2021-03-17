@@ -1,5 +1,5 @@
 //
-//  Info.swift
+//  FoodModel.swift
 //  Assignment1
 //
 //  Created by Yasin Cakar on 16/3/21.
@@ -8,15 +8,18 @@
 import Foundation
 import SwiftUI
 
-struct Info {
+class FoodModel {
     
-    let title:String
-    let imageWith:CGFloat
-    let imageHeight:CGFloat
-    let imageName:String
-    let backgroundColor:UIColor
+    let foodName:String
     let shortDescription:String
     let story:String
+    
+    init(foodName:String,shortDescription:String,story:String) {
+        
+        self.foodName = foodName
+        self.shortDescription = shortDescription
+        self.story = story
+    }
 }
 /*
 let imageWith = CGFloat(350.0)
@@ -33,3 +36,9 @@ For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab
 Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
 """
 */
+
+struct FoodModel_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

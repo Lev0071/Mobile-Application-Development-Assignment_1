@@ -7,33 +7,35 @@
 
 import SwiftUI
 
-let displayInfo = fillInfo()
-
+//let displayInfo = fillInfo()
 
 struct ContentView: View {
+    
+    let viewModel:FoodViewModel
+    
     var body: some View {
         ZStack{
-            Color(displayInfo.backgroundColor)
+            Color(viewModel.backgroundColor)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 //Image
-                Image(displayInfo.imageName)
+                Image(viewModel.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: displayInfo.imageWith
-                           , height: displayInfo.imageHeight, alignment: .center)
+                    .frame(width: 350.0
+                           , height: 350.0, alignment: .center)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .overlay(
                         Circle().stroke(Color.white,lineWidth: 3)
                     )
                 //Title
-                Text(displayInfo.title)
+                Text(viewModel.titleString)
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
                     .padding()
                 //Short Description
-                Text(displayInfo.shortDescription)
+                Text(viewModel.captionString)
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
@@ -47,7 +49,7 @@ struct ContentView: View {
                     .background(Color.white)
                     .padding(.top, 20)
                 // Background (Story)
-                Text(displayInfo.story)
+                Text(viewModel.storyString)
                     .font(.body)
                     .fontWeight(.medium)
                     .foregroundColor(Color(.secondarySystemGroupedBackground))
@@ -64,29 +66,42 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().previewDevice("iPhone SE")
+        
+        let story = """
+
+        I love Kebab and Pizzas, not only because I am Mediterranean myself!
+        I love it because of its great taste despite its simplicity!
+
+        For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
+
+        Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
+        """
+        
+        let model = FoodModel(foodName: "Kebabs And Pizzas", shortDescription: "A delicous yet simple mix of Proteins, Vegetables and Carbs", story: story)
+        
+        ContentView(viewModel: FoodViewModel(model: model, imageName: "KebabAndPizza", imageWidth: 350.0, imageHeight: 350.0, backgroundColor: #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1))).previewDevice("iPhone SE")
     }
 }
 
-func fillInfo() -> Info{
-    
-    let title = "Kebabs And Pizzas"
-    let imageWith = CGFloat(350.0)
-    let imageHeight = CGFloat(350.0)
-    let imageName = "KebabAndPizza"
-    let backgroundColor = #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1)
-    let shortDescription = "A delicous yet simple mix of Proteins, Vegetables and Carbs"
-    let story = """
-
-    I love Kebab and Pizzas, not only because I am Mediterranean myself!
-    I love it because of its great taste despite its simplicity!
-
-    For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
-
-    Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
-    """
-    
-    let info = Info(title: title,imageWith: imageWith, imageHeight: imageHeight, imageName: imageName, backgroundColor: backgroundColor, shortDescription: shortDescription, story: story)
-
-   return info
-}
+//func fillInfo() -> FoodModel{
+//
+//    let title = "Kebabs And Pizzas"
+//    let imageWith = CGFloat(350.0)
+//    let imageHeight = CGFloat(350.0)
+//    let imageName = "KebabAndPizza"
+//    let backgroundColor = #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1)
+//    let shortDescription = "A delicous yet simple mix of Proteins, Vegetables and Carbs"
+//    let story = """
+//
+//    I love Kebab and Pizzas, not only because I am Mediterranean myself!
+//    I love it because of its great taste despite its simplicity!
+//
+//    For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
+//
+//    Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
+//    """
+//
+//    let info = FoodModel(title: title, foodName: imageName,  shortDescription: shortDescription, story: story)
+//
+//   return info
+//}
