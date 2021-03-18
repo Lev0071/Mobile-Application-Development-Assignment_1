@@ -32,13 +32,13 @@ struct ContentView: View {
                 Text(viewModel.titleString)
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(Color(.secondarySystemGroupedBackground))
+                    .foregroundColor(Color(UIColor(red: 0.98, green: 0.51, blue: 0.41, alpha: 1.00)))
                     .padding()
                 //Short Description
                 Text(viewModel.captionString)
                     .font(.caption)
                     .fontWeight(.bold)
-                    .foregroundColor(Color(.secondarySystemGroupedBackground))
+                    .foregroundColor(Color(UIColor(red: 0.98, green: 0.51, blue: 0.41, alpha: 1.00)))
                     .font(.system(size: 15))
                     .padding(10)
                     .overlay(
@@ -52,7 +52,7 @@ struct ContentView: View {
                 Text(viewModel.storyString)
                     .font(.body)
                     .fontWeight(.medium)
-                    .foregroundColor(Color(.secondarySystemGroupedBackground))
+                    .foregroundColor(Color(UIColor(red: 0.98, green: 0.51, blue: 0.41, alpha: 1.00)))
                     .padding(.horizontal)
                     .overlay(
                                 RoundedRectangle(cornerRadius: 10)
@@ -79,7 +79,7 @@ struct ContentView_Previews: PreviewProvider {
         
         let model = FoodModel(foodName: "Kebabs And Pizzas", shortDescription: "A delicous yet simple mix of Proteins, Vegetables and Carbs", story: story)
         
-        ContentView(viewModel: FoodViewModel(model: model, imageName: "KebabAndPizza", imageWidth: 350.0, imageHeight: 350.0, backgroundColor: #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1))).previewDevice("iPhone SE")
+        ContentView(viewModel: FoodViewModel(model: model, imageName: "KebabAndPizza", imageWidth: 350.0, imageHeight: 350.0, backgroundColor: #colorLiteral(red: 0.06343274564, green: 0.8916143775, blue: 0.9905987382, alpha: 1))).previewDevice("iPhone SE")
     }
 }
 

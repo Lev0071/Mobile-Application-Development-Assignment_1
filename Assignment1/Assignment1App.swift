@@ -12,19 +12,9 @@ struct Assignment1App: App {
     var body: some Scene {
         WindowGroup {
             
-            let story = """
-
-            I love Kebab and Pizzas, not only because I am Mediterranean myself!
-            I love it because of its great taste despite its simplicity!
-
-            For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
-
-            Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
-            """
+            let model = FoodModel(foodName: Input.modelData.foodName, shortDescription: Input.modelData.shortDescription, story: Input.modelData.story)
             
-            let model = FoodModel(foodName: "Kebabs And Pizzas", shortDescription: "A delicous yet simple mix of Proteins, Vegetables and Carbs", story: story)
-            
-            ContentView(viewModel: FoodViewModel(model: model, imageName: "KebabAndPizza", imageWidth: 350.0, imageHeight: 350.0, backgroundColor: #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1)))
+            ContentView(viewModel: FoodViewModel(model: model, imageName: Input.viewData.imageName, imageWidth: Input.viewData.imageWith, imageHeight: Input.viewData.imageHeight, backgroundColor: Input.viewData.backgroundColor))
         }
     }
 }

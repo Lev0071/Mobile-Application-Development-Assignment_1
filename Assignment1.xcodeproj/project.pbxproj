@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84503F93260320AA00E3851C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84503F92260320AA00E3851C /* Input.swift */; };
 		84CA95EB25FF5C26009CFFA5 /* Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */; };
 		84CA95ED25FF5C26009CFFA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95EC25FF5C26009CFFA5 /* ContentView.swift */; };
 		84CA95EF25FF5C29009CFFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA95EE25FF5C29009CFFA5 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84503F92260320AA00E3851C /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		84CA95E725FF5C26009CFFA5 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1App.swift; sourceTree = "<group>"; };
 		84CA95EC25FF5C26009CFFA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				84CA95F325FF5C29009CFFA5 /* Info.plist */,
 				84CA95F025FF5C29009CFFA5 /* Preview Content */,
 				84FC67E626024B18000A676C /* FoodViewModel.swift */,
+				84503F92260320AA00E3851C /* Input.swift */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84503F93260320AA00E3851C /* Input.swift in Sources */,
 				84FC67E726024B18000A676C /* FoodViewModel.swift in Sources */,
 				84CA95ED25FF5C26009CFFA5 /* ContentView.swift in Sources */,
 				84FC67AA2600540D000A676C /* FoodModel.swift in Sources */,
