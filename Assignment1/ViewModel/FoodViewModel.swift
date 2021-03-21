@@ -8,6 +8,33 @@
 import Foundation
 import SwiftUI
 
+/**
+    This is a a view model class for foods to be represented in a view. this class hold the display elements for the view as its property
+ 
+    The proprties of this class are as follows (the properties marked with a ⭐ are derived from the model property):
+ 
+    *  \+ **FoodModel** model
+    *  \+ **String** imageName
+    *  \+ **String** titleString ⭐
+    *  \+ **String** captionString ⭐
+    *  \+ **String** storyString ⭐
+    *  \+ **CGFloat** imageWidth
+    *  \+ **CGFloat** imageHeight
+    *  \+ **UIColor** backgroundColor
+ 
+     - Precondition: To use this class, you must first instantiate an instance of the FoodModel class
+ 
+     ### Usage Example ###
+     ```
+     # initialse the model object first.
+     let model = FoodModel(foodName: <#T##String#>, shortDescription: <#T##String#>, story: <#T##String#>)
+ 
+     # initialise the view model class
+     let viewModel = FoodViewModel(model: <#T##model#>, imageName: <#T##String#>, imageWidth: <#T##CGFloat#>, imageHeight: <#T##CGFloat#>, backgroundColor: <#T##UIColor#>)
+     ```
+
+     - Author: Yasin Çakar
+ */
 class FoodViewModel{
 
     let model:FoodModel

@@ -8,6 +8,23 @@
 import Foundation
 import SwiftUI
 
+/**
+    This is a struct that is a constant file that holds all the input data for the Model and the View Model.
+ 
+     # Important Notes #
+ 
+    This struct conatains two properties that are also structs:
+ 
+     * ### modelData: This structs contains all the data that relate to the food to be diplayed about the food
+     * ### viewData : This structs contains all the data that relate display properties of  the view
+ 
+     ### Usage Example ###
+     ```
+     Input.modelData.<a modelData property>
+     Input.viewData.<a viewData property>
+     ```
+
+ */
 struct Input {
     
     struct modelData{

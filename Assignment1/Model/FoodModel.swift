@@ -8,6 +8,20 @@
 import Foundation
 import SwiftUI
 
+/**
+    This is a model class for foods to be represented in a view. This class has three properties at the moment:
+    *  \+ **String** foodname
+    *  \+ **String** shortDescription
+    *  \+ **String** story
+ 
+     ### Usage Example ###
+     ```
+     Input.modelData.<a modelData property>
+     Input.viewData.<a viewData property>
+     ```
+
+     - Author: Yasin Çakar
+ */
 class FoodModel {
     
     let foodName:String
