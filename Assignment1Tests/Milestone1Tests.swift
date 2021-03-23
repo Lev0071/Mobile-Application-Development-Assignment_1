@@ -1,47 +1,15 @@
 //
-//  Assignment1Tests.swift
-//  Assignment1Tests
+//  Milestone1Tests.swift
+//  Assignment1
 //
-//  Created by Yasin Cakar on 15/3/21.
+//  Created by Yasin Cakar on 18/3/21.
 //
 
 import XCTest
 @testable import Assignment1
 
-class Assignment1Tests: XCTestCase {
-    
-    var model: FoodModel?
+class MilestoneOneAssignment1Tests: XCTestCase {
 
-    override func setUpWithError() throws {
-        model = FoodModel(foodName: "cake", shortDescription: "a cake", story: <#T##String#>)
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
-    func testConstructor() {
-        XCTAssertEqual(model?.foodName, "cake")
-        XCTAssertEqual(model?.shortDescription, "a cake")
-    }
-    
-    func testName {
-        self.model?.foodName = "sdada"
-        XCTAssertEqual(model?.foodName, "sdada")
-    }
     
     struct TestMileStone1 {
     
@@ -63,7 +31,7 @@ class Assignment1Tests: XCTestCase {
     }
     
     func testProject(){
-        
+
         // Test Model Properties
         XCTAssertEqual(TestMileStone1.modelProperties.foodName, Input.modelData.foodName)
         XCTAssertEqual(TestMileStone1.modelProperties.shortDescription, Input.modelData.shortDescription)
@@ -80,3 +48,4 @@ class Assignment1Tests: XCTestCase {
     
 
 }
+// setupwithERROR

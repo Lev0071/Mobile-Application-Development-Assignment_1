@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		84503F93260320AA00E3851C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84503F92260320AA00E3851C /* Input.swift */; };
+		84503FCC26036FD400E3851C /* Milestone1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84503FB926036F3D00E3851C /* Milestone1Tests.swift */; };
 		84CA95EB25FF5C26009CFFA5 /* Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */; };
 		84CA95ED25FF5C26009CFFA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95EC25FF5C26009CFFA5 /* ContentView.swift */; };
 		84CA95EF25FF5C29009CFFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA95EE25FF5C29009CFFA5 /* Assets.xcassets */; };
 		84CA95F225FF5C29009CFFA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA95F125FF5C29009CFFA5 /* Preview Assets.xcassets */; };
 		84CA95FD25FF5C29009CFFA5 /* Assignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95FC25FF5C29009CFFA5 /* Assignment1Tests.swift */; };
 		84CA960825FF5C29009CFFA5 /* Assignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA960725FF5C29009CFFA5 /* Assignment1UITests.swift */; };
+		84CD206726076364007602BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84CD206626076364007602BB /* README.md */; };
 		84FC67AA2600540D000A676C /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC679E26004EA3000A676C /* FoodModel.swift */; };
 		84FC67B526005434000A676C /* InfoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC67B426005434000A676C /* InfoTest.swift */; };
 		84FC67E726024B18000A676C /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC67E626024B18000A676C /* FoodViewModel.swift */; };
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		84503F92260320AA00E3851C /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		84503FB926036F3D00E3851C /* Milestone1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone1Tests.swift; sourceTree = "<group>"; };
 		84CA95E725FF5C26009CFFA5 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1App.swift; sourceTree = "<group>"; };
 		84CA95EC25FF5C26009CFFA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		84CA960325FF5C29009CFFA5 /* Assignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA960725FF5C29009CFFA5 /* Assignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1UITests.swift; sourceTree = "<group>"; };
 		84CA960925FF5C29009CFFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CD206626076364007602BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84FC679E26004EA3000A676C /* FoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
 		84FC67B426005434000A676C /* InfoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTest.swift; sourceTree = "<group>"; };
 		84FC67E626024B18000A676C /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
@@ -80,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84503FB026034BB700E3851C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84FC679E26004EA3000A676C /* FoodModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84503FB426034BF700E3851C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84CA95EC25FF5C26009CFFA5 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84503FB526034C1600E3851C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */,
+				84FC67E626024B18000A676C /* FoodViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		84CA95DE25FF5C26009CFFA5 = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +132,13 @@
 		84CA95E925FF5C26009CFFA5 /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
-				84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */,
-				84CA95EC25FF5C26009CFFA5 /* ContentView.swift */,
-				84FC679E26004EA3000A676C /* FoodModel.swift */,
+				84CD206626076364007602BB /* README.md */,
+				84503FB526034C1600E3851C /* ViewModel */,
+				84503FB426034BF700E3851C /* View */,
+				84503FB026034BB700E3851C /* Model */,
 				84CA95EE25FF5C29009CFFA5 /* Assets.xcassets */,
 				84CA95F325FF5C29009CFFA5 /* Info.plist */,
 				84CA95F025FF5C29009CFFA5 /* Preview Content */,
-				84FC67E626024B18000A676C /* FoodViewModel.swift */,
 				84503F92260320AA00E3851C /* Input.swift */,
 			);
 			path = Assignment1;
@@ -126,6 +155,7 @@
 		84CA95FB25FF5C29009CFFA5 /* Assignment1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				84503FB926036F3D00E3851C /* Milestone1Tests.swift */,
 				84CA95FC25FF5C29009CFFA5 /* Assignment1Tests.swift */,
 				84CA95FE25FF5C29009CFFA5 /* Info.plist */,
 			);
@@ -245,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CD206726076364007602BB /* README.md in Resources */,
 				84CA95F225FF5C29009CFFA5 /* Preview Assets.xcassets in Resources */,
 				84CA95EF25FF5C29009CFFA5 /* Assets.xcassets in Resources */,
 			);
@@ -283,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84503FCC26036FD400E3851C /* Milestone1Tests.swift in Sources */,
 				84CA95FD25FF5C29009CFFA5 /* Assignment1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
