@@ -9,8 +9,11 @@ import XCTest
 @testable import Assignment1
 
 class Assignment1Tests: XCTestCase {
+    
+    var model: FoodModel?
 
     override func setUpWithError() throws {
+        model = FoodModel(foodName: "cake", shortDescription: "a cake", story: <#T##String#>)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
@@ -28,6 +31,16 @@ class Assignment1Tests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testConstructor() {
+        XCTAssertEqual(model?.foodName, "cake")
+        XCTAssertEqual(model?.shortDescription, "a cake")
+    }
+    
+    func testName {
+        self.model?.foodName = "sdada"
+        XCTAssertEqual(model?.foodName, "sdada")
     }
     
     struct TestMileStone1 {

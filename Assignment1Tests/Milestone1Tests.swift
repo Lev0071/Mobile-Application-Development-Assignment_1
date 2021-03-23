@@ -31,7 +31,7 @@ class MilestoneOneAssignment1Tests: XCTestCase {
     }
     
     func testProject(){
-        
+
         // Test Model Properties
         XCTAssertEqual(TestMileStone1.modelProperties.foodName, Input.modelData.foodName)
         XCTAssertEqual(TestMileStone1.modelProperties.shortDescription, Input.modelData.shortDescription)
@@ -48,3 +48,4 @@ class MilestoneOneAssignment1Tests: XCTestCase {
     
 
 }
+// setupwithERROR

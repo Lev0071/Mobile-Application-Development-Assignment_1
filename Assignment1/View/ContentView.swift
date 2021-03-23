@@ -22,8 +22,8 @@ struct ContentView: View {
                 Image(viewModel.imageName)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 350.0
-                           , height: 350.0, alignment: .center)
+                    .frame(width: viewModel.imageWidth
+                           , height: viewModel.getImageHieght(), alignment: .center)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .overlay(
                         Circle().stroke(Color.white,lineWidth: 3)
@@ -66,7 +66,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        
+
         let model = FoodModel(foodName: Input.modelData.foodName, shortDescription: Input.modelData.shortDescription, story: Input.modelData.story)
         
         ContentView(viewModel: FoodViewModel(model: model, imageName: Input.viewData.imageName, imageWidth: Input.viewData.imageWith, imageHeight: Input.viewData.imageHeight, backgroundColor: Input.viewData.backgroundColor)).previewDevice("iPhone SE")

@@ -26,7 +26,7 @@ import SwiftUI
 
  */
 struct Input {
-    
+
     struct modelData{
         static let foodName = "Kebabs And Pizzas"
         static let shortDescription = "A delicous yet simple mix of Proteins, Vegetables and Carbs"
@@ -48,3 +48,4 @@ struct Input {
         static let imageName = "KebabAndPizza"
     }
 }
+

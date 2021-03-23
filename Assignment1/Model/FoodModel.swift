@@ -16,14 +16,13 @@ import SwiftUI
  
      ### Usage Example ###
      ```
-     Input.modelData.<a modelData property>
-     Input.viewData.<a viewData property>
+     let model = FoodModel(model: <#T##FoodModel#>, imageName: <#T##String#>, imageWidth: <#T##CGFloat#>, imageHeight: <#T##CGFloat#>, backgroundColor: <#T##UIColor#>)
      ```
 
      - Author: Yasin Çakar
  */
 class FoodModel {
-    
+    ///qwerty
     let foodName:String
     let shortDescription:String
     let story:String
