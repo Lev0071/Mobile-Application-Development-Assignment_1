@@ -27,10 +27,7 @@ import SwiftUI
  */
 struct Input {
 
-    struct modelData{
-        static let foodName = "Kebabs And Pizzas"
-        static let shortDescription = "A delicous yet simple mix of Proteins, Vegetables and Carbs"
-        static let story = """
+    let modelData = (foodName: "Kebabs And Pizzas", shortDescription: "A delicous yet simple mix of Proteins, Vegetables and Carbs", story: """
             
             I love Kebab and Pizzas, not only because I am Mediterranean myself!
             I love it because of its great taste despite its simplicity!
@@ -38,14 +35,32 @@ struct Input {
             For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
             
             Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
-            """
-    }
+            """)
     
-    struct viewData{
-        static let imageWith = CGFloat(350.0)
-        static let imageHeight = CGFloat(350.0)
-        static let backgroundColor = #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1)
-        static let imageName = "KebabAndPizza"
-    }
+    let viewData = (imageWith: CGFloat(350.0),imageHeight:CGFloat(350.0),backgroundColor: #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1),imageName:"KebabAndPizza")
+    
 }
+//struct Input {
+//
+//    struct modelData{
+//         let foodName = "Kebabs And Pizzas"
+//         let shortDescription = "A delicous yet simple mix of Proteins, Vegetables and Carbs"
+//         let story = """
+//
+//            I love Kebab and Pizzas, not only because I am Mediterranean myself!
+//            I love it because of its great taste despite its simplicity!
+//
+//            For me a Kebab is an open pizza, or a portable pizza, and pizza is an open kebab when yo have time to put your foot up.
+//
+//            Both have the 3 macronutrient groups...Protein, vegetables and Carbs and you can portion them when you prepare it 😋
+//            """
+//    }
+//
+//    struct viewData{
+//         let imageWith = CGFloat(350.0)
+//         let imageHeight = CGFloat(350.0)
+//         let backgroundColor = #colorLiteral(red: 0, green: 0.9103174806, blue: 1, alpha: 1)
+//         let imageName = "KebabAndPizza"
+//    }
+//}
 

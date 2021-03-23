@@ -12,9 +12,11 @@ struct Assignment1App: App {
     var body: some Scene {
         WindowGroup {
             
-            let model = FoodModel(foodName: Input.modelData.foodName, shortDescription: Input.modelData.shortDescription, story: Input.modelData.story)
+            let input = Input()
             
-            ContentView(viewModel: FoodViewModel(model: model, imageName: Input.viewData.imageName, imageWidth: Input.viewData.imageWith, imageHeight: Input.viewData.imageHeight, backgroundColor: Input.viewData.backgroundColor))
+            let model = FoodModel(foodName: input.modelData.foodName, shortDescription: input.modelData.shortDescription, story: input.modelData.story)
+            
+            ContentView(viewModel: FoodViewModel(model: model, imageName: input.viewData.imageName, imageWidth: input.viewData.imageWith, imageHeight: input.viewData.imageHeight, backgroundColor: input.viewData.backgroundColor))
         }
     }
 }

@@ -22,7 +22,7 @@ import SwiftUI
      - Author: Yasin Çakar
  */
 class FoodModel {
-    ///qwerty
+    
     let foodName:String
     let shortDescription:String
     let story:String

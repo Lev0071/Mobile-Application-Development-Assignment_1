@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84377846260A161700B8EADF /* Milestone1ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84377845260A161700B8EADF /* Milestone1ModelTests.swift */; };
 		84503F93260320AA00E3851C /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84503F92260320AA00E3851C /* Input.swift */; };
-		84503FCC26036FD400E3851C /* Milestone1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84503FB926036F3D00E3851C /* Milestone1Tests.swift */; };
+		84503FCC26036FD400E3851C /* Milestone1Tests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84503FB926036F3D00E3851C /* Milestone1Tests2.swift */; };
 		84CA95EB25FF5C26009CFFA5 /* Assignment1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */; };
 		84CA95ED25FF5C26009CFFA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA95EC25FF5C26009CFFA5 /* ContentView.swift */; };
 		84CA95EF25FF5C29009CFFA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CA95EE25FF5C29009CFFA5 /* Assets.xcassets */; };
@@ -39,8 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84377845260A161700B8EADF /* Milestone1ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone1ModelTests.swift; sourceTree = "<group>"; };
 		84503F92260320AA00E3851C /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
-		84503FB926036F3D00E3851C /* Milestone1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone1Tests.swift; sourceTree = "<group>"; };
+		84503FB926036F3D00E3851C /* Milestone1Tests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone1Tests2.swift; sourceTree = "<group>"; };
 		84CA95E725FF5C26009CFFA5 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CA95EA25FF5C26009CFFA5 /* Assignment1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment1App.swift; sourceTree = "<group>"; };
 		84CA95EC25FF5C26009CFFA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84377843260A142300B8EADF /* Milestone1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84377844260A15D900B8EADF /* Model Tests */,
+				84503FB926036F3D00E3851C /* Milestone1Tests2.swift */,
+			);
+			path = Milestone1Tests;
+			sourceTree = "<group>";
+		};
+		84377844260A15D900B8EADF /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				84377845260A161700B8EADF /* Milestone1ModelTests.swift */,
+			);
+			path = "Model Tests";
+			sourceTree = "<group>";
+		};
 		84503FB026034BB700E3851C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,7 +174,7 @@
 		84CA95FB25FF5C29009CFFA5 /* Assignment1Tests */ = {
 			isa = PBXGroup;
 			children = (
-				84503FB926036F3D00E3851C /* Milestone1Tests.swift */,
+				84377843260A142300B8EADF /* Milestone1Tests */,
 				84CA95FC25FF5C29009CFFA5 /* Assignment1Tests.swift */,
 				84CA95FE25FF5C29009CFFA5 /* Info.plist */,
 			);
@@ -314,7 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84503FCC26036FD400E3851C /* Milestone1Tests.swift in Sources */,
+				84503FCC26036FD400E3851C /* Milestone1Tests2.swift in Sources */,
+				84377846260A161700B8EADF /* Milestone1ModelTests.swift in Sources */,
 				84CA95FD25FF5C29009CFFA5 /* Assignment1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

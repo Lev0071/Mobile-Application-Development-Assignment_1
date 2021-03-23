@@ -24,6 +24,7 @@ import SwiftUI
  
      - Precondition: To use this class, you must first instantiate an instance of the FoodModel class
  
+     
      ### Usage Example ###
      ```
      # initialse the model object first.
@@ -36,7 +37,7 @@ import SwiftUI
      - Author: Yasin Çakar
  */
 class FoodViewModel{
-
+    
     let model:FoodModel
     let imageName: String
     var titleString: String { return model.foodName }
@@ -45,7 +46,10 @@ class FoodViewModel{
     let imageWidth:CGFloat
     let imageHeight:CGFloat
     let backgroundColor:UIColor
-    
+    /**
+    - Parameters:
+    - parameter model: this is the model
+     */
     init(model: FoodModel, imageName: String, imageWidth:CGFloat, imageHeight:CGFloat, backgroundColor:UIColor){
         
         self.model = model
