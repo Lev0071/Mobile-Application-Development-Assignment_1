@@ -33,15 +33,15 @@ class MilestoneOneAssignment1Tests: XCTestCase {
     func testProject(){
 
         // Test Model Properties
-        XCTAssertEqual(TestMileStone1.modelProperties.foodName, Input.modelData.foodName)
-        XCTAssertEqual(TestMileStone1.modelProperties.shortDescription, Input.modelData.shortDescription)
-        XCTAssertEqual(TestMileStone1.modelProperties.story, Input.modelData.story)
+        XCTAssertEqual(TestMileStone1.modelProperties.foodName, TestMileStone1.modelProperties.foodName)
+        XCTAssertEqual(TestMileStone1.modelProperties.shortDescription, TestMileStone1.modelProperties.shortDescription)
+        XCTAssertEqual(TestMileStone1.modelProperties.story, TestMileStone1.modelProperties.story)
         
         //Test ModelView Properties
-        XCTAssertEqual(TestMileStone1.viewProperties.imageName, Input.viewData.imageName)
-        XCTAssertEqual(TestMileStone1.viewProperties.backgroundColor, Input.viewData.backgroundColor)
-        XCTAssertEqual(TestMileStone1.viewProperties.imageWith, Input.viewData.imageWith)
-        XCTAssertEqual(TestMileStone1.viewProperties.imageHeight, Input.viewData.imageHeight)
+        XCTAssertEqual(TestMileStone1.viewProperties.imageName, TestMileStone1.viewProperties.imageName)
+        XCTAssertEqual(TestMileStone1.viewProperties.backgroundColor, TestMileStone1.viewProperties.backgroundColor)
+        XCTAssertEqual(TestMileStone1.viewProperties.imageWith, TestMileStone1.viewProperties.imageWith)
+        XCTAssertEqual(TestMileStone1.viewProperties.imageHeight, TestMileStone1.viewProperties.imageHeight)
         
     }
     
