@@ -93,8 +93,8 @@
 		84377843260A142300B8EADF /* Milestone1Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8437784D260A23E100B8EADF /* ViewModel Tests */,
 				84377844260A15D900B8EADF /* Model Tests */,
+				8437784D260A23E100B8EADF /* ViewModel Tests */,
 				84377864260A47A800B8EADF /* Delete */,
 			);
 			path = Milestone1Tests;
@@ -173,9 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				84CD206626076364007602BB /* README.md */,
-				84503FB526034C1600E3851C /* ViewModel */,
-				84503FB426034BF700E3851C /* View */,
 				84503FB026034BB700E3851C /* Model */,
+				84503FB426034BF700E3851C /* View */,
+				84503FB526034C1600E3851C /* ViewModel */,
 				84CA95EE25FF5C29009CFFA5 /* Assets.xcassets */,
 				84CA95F325FF5C29009CFFA5 /* Info.plist */,
 				84CA95F025FF5C29009CFFA5 /* Preview Content */,

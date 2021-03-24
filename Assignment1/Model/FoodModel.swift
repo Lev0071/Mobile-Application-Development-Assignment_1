@@ -27,6 +27,12 @@ class FoodModel {
     let shortDescription:String
     let story:String
     
+    /**
+    - Parameters:
+    - parameter foodName: name of the food to be displayed in the view
+    - parameter shortDescription: a caption text telling the viewer about the food displayed
+    - parameter story: a short story about the food displayed
+     */
     init(foodName:String,shortDescription:String,story:String) {
         
         self.foodName = foodName

@@ -48,7 +48,11 @@ class FoodViewModel{
     let backgroundColor:UIColor
     /**
     - Parameters:
-    - parameter model: this is the model
+    - parameter model: this is the model of type **FoodViewModel**, where titleString, captionString and storyString is derived from
+    - parameter imageName: name of the image to be used to display from image source
+    - parameter imageWidth: the width of the image to be displayed of type **CGFloat**
+    - parameter imageHeight: the height of the image to be displayed of type **CGFloat**
+    - parameter backgroundColor: colour of the background to be displayed on the screen
      */
     init(model: FoodModel, imageName: String, imageWidth:CGFloat, imageHeight:CGFloat, backgroundColor:UIColor){
         
@@ -57,33 +61,5 @@ class FoodViewModel{
         self.imageWidth = imageWidth
         self.imageHeight = imageHeight
         self.backgroundColor = backgroundColor
-    }
-
-    func getBackgroundColour() -> UIColor {
-        return backgroundColor
-    }
-    
-    func getImageWidth() -> CGFloat {
-        return imageWidth
-    }
-    
-    func getImageHieght() -> CGFloat {
-        return imageHeight
-    }
-    
-    func getImageName() -> String {
-        return imageName
-    }
-    
-    func getTitleText() -> String {
-        return titleString
-    }
-    
-    func getCaptionText() -> String {
-        return captionString
-    }
-    
-    func getStoryText() -> String {
-        return storyString
     }
 }

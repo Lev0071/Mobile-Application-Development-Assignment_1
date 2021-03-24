@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-//let displayInfo = fillInfo()
-
 struct ContentView: View {
     
     let viewModel:FoodViewModel
@@ -23,7 +21,7 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: viewModel.imageWidth
-                           , height: viewModel.getImageHieght(), alignment: .center)
+                           , height: viewModel.imageHeight, alignment: .center)
                     .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     .overlay(
                         Circle().stroke(Color.white,lineWidth: 3)
